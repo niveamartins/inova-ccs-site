@@ -1,0 +1,49 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    background-color: #008000;
+    margin: 0px !important; 
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+}
+
+li {
+    background-color: #008000;
+    transition: background-color .5s ease;
+}
+
+li :hover {
+    background-color: #004000;
+}
+
+li :active {
+    background-color: #004000;
+}
+
+
+li a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-right: 5px;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+li a :active {
+    background-color: #004000;
+}
+
+

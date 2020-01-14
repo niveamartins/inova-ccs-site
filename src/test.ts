@@ -7,6 +7,8 @@ import {
   platformBrowserDynamicTesting
 } from '@angular/platform-browser-dynamic/testing';
 
+// tslint:disable-next-line: import-spacing
+import '~leaflet/dist/leaflet.css';
 declare const require: any;
 
 // First, initialize the Angular testing environment.

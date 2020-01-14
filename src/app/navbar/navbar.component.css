@@ -3,10 +3,13 @@ nav {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding: 5px;
     background-color: #008000;
     margin: 0px !important; 
+    height: 10%;
+}
 
+.brand-logo {
+    height: 160px;
 }
 
 ul {

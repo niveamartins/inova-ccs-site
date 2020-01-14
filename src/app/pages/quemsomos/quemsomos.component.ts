@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LabsService } from 'src/app/labs.service';
 
 @Component({
   selector: 'app-quemsomos',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuemsomosComponent implements OnInit {
 
-  constructor() { }
+  constructor(public labsService: LabsService) {
+
+  }
+
+  getLabs(): void {
+    this.labsService.getLabs().subscribe(
+      (res) => {
+        console.log(res);
+      }
+    );
+  }
 
   ngOnInit() {
   }

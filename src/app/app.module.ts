@@ -7,6 +7,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { QuemsomosComponent } from './pages/quemsomos/quemsomos.component';
 import { ServicosComponent } from './pages/servicos/servicos.component';
+import { MapComponent } from './map/map.component';
+
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,13 @@ import { ServicosComponent } from './pages/servicos/servicos.component';
     NavbarComponent,
     HomeComponent,
     QuemsomosComponent,
-    ServicosComponent
+    ServicosComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LeafletModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

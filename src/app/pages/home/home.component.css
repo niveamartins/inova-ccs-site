@@ -1,0 +1,110 @@
+#servicos {
+    display: inline-block;
+    background-color: #008000;
+    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 7%;
+}
+
+.body-servicos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+}
+
+.menu-aside {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu-aside h2 {
+    color: white;
+    width: 100%;
+    text-align: center;
+
+}
+
+.menu-aside ul {
+    width: 100%;
+    padding: 0;
+}
+
+.menu-aside ul li {
+    background-color: #006600;
+    width: 100%;
+    list-style-type: none;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: center;
+
+}
+
+.menu-aside ul :hover {
+    background-color: #004000;
+}
+
+.menu-aside ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.texto-servicos {
+    border: white 1px solid;
+    padding: 3%;
+    margin-top: 2%;
+}
+
+.texto-servicos h2 {
+    color: #CC5F0A;
+}
+
+.texto-servicos h3 {
+    color: #FFFF;
+    font-weight: normal;
+}
+
+.p-topico-s {
+    font-weight: bold;
+}
+
+
+#quemsomos {
+    display: inline-block;
+    padding-top: 5%;
+}
+
+.body-quemsomos {
+    padding: 5%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#quemsomos h1 {
+    text-transform: uppercase;
+    color: #CC5F0A;
+    text-align: center;
+    margin-bottom: 4%;
+
+}
+
+.imagens-qs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 1%;
+}
+
+.brand-logo-qs {
+    height: 50px;
+}

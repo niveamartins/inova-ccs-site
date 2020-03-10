@@ -4,6 +4,7 @@ from flask import request, jsonify, Blueprints
 from src.model.laboratorio import laboratorio
 from src.util.mysql import estabelece_sessao
 
+blueprint = Blueprint('endpoints',__name__)
 
 @blueprint.route
 def index('/', methods=['GET']):

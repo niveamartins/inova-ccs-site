@@ -1,11 +1,11 @@
-from sqlalchemy import Column, Float, String
+from sqlalchemy import Column, Float, String, Integer
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
 
 class laboratorio(Base):
-    __tablename__ = 'marcadores'
+    __tablename__ = 'laboratorio'
     Id = Column(Integer, primary_key=True)
     Nome = Column(String)
     Servico1 = Column(String)
@@ -23,7 +23,7 @@ class laboratorio(Base):
     Contato3 = Column(String)
     Endereco = Column(String)
     Coordenada_S = Column(Float)
-    Coordenada_W = Column(String)
+    Coordenada_W = Column(Float)
 
     def servicos(self):
         return {

@@ -1,6 +1,6 @@
 import json
 
-from flask import request, jsonify, Blueprints
+from flask import request, jsonify, Blueprint
 from src.model.laboratorio import laboratorio
 from src.util.mysql import estabelece_sessao
 
@@ -13,12 +13,15 @@ def index():
     info = sessao.query(laboratorio).all()
     info = [i.marks() for i in info]
     sessao.close()
+    print("foi")
     return jsonify(info)
 
-@blueprint.route('/servico?Tag=<id>', methods=['POST'])
-def servico(Tag):
+@blueprint.route('/servico', methods=['GET'])
+def servico():
     sessao = estabelece_sessao()
-    info = sessao.query(laboratorio).filter(laboratorio.Id == Tag).one()
+    Tag = request.args.get('Tag')
+    print(Tag)
+    info = sessao.query(laboratorio).filter(laboratorio.Id == Tag).all()
     info = [i.servicos() for i in info]
     sessao.close()
     return jsonify(info)

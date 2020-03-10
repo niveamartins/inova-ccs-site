@@ -13,4 +13,4 @@ if __name__ == '__main__':
         return "erro de conexao...", 502
     app.register_blueprint(blueprint)
 
-    server(app, host='0.0.0.0', port=8081)
+    serve(app, host='0.0.0.0', port=8081)

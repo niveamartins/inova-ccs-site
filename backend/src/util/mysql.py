@@ -1,7 +1,7 @@
 from mysqlalchemy import create_engine
 from mysqlalchemy.orm import sessionmaker
 
-engine = create_engine('mysql://teste:inova@127.0.0.1:3306')
+engine = create_engine('mysql://bd:inova@localhost')
 
 def estabelece_sessao():
         return Session()

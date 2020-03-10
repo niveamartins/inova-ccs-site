@@ -6,8 +6,8 @@ from src.util.mysql import estabelece_sessao
 
 blueprint = Blueprint('endpoints',__name__)
 
-@blueprint.route
-def index('/', methods=['GET']):
+@blueprint.route('/', methods=['GET'])
+def index():
 
     sessao = estabelece_sessao()
     info = sessao.query(laboratorio).all()
@@ -15,8 +15,8 @@ def index('/', methods=['GET']):
     sessao.close()
     return jsonify(info)
 
-@blueprint.route
-def servico(('/servico?Tag=<id>', methods=['POST'])):
+@blueprint.route('/servico?Tag=<id>', methods=['POST'])
+def servico(Tag):
     sessao = estabelece_sessao()
     info = sessao.query(laboratorio).filter(laboratorio.Id == Tag).one()
     info = [i.servicos() for i in info]

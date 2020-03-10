@@ -25,7 +25,7 @@ class laboratorio(Base):
     Coordenada_S = Column(Float)
     Coordenada_W = Column(String)
 
-    def format(self):
+    def servicos(self):
         return {
             "Id": f'{self.Id}',
             "Nome": f'{self.Nome}',
@@ -42,7 +42,12 @@ class laboratorio(Base):
             "Contato1": f'{self.Contato1}',
             "Contato2": f'{self.Contato2}',
             "Contato3": f'{self.Contato3}',
-            "Endereco": f'{self.Endereco}',
+            "Endereco": f'{self.Endereco}'
+        }
+    def marks(self):
+        return {
+            "Id": f'{self.Id}',
+            "Nome": f'{self.Nome}',
             "Coordenada_S": f'{self.Coordenada_S}',
             "Coordenada_W": f'{self.Coordenada_W}'
         }

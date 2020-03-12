@@ -1,0 +1,57 @@
+<div id="mapa">
+    <app-map></app-map>
+</div>
+
+<div id="servicos">
+    <!-- Nada aqui tá certo -->
+    <div class="body-servicos">
+        <div class="menu-aside">
+            <h2>ACESSO RÁPIDO</h2>
+                <ul class="dropdown-menu">
+                    <li *ngFor="let option of labs" (click)="onClick(option)">
+                        {{ option.Nome }}
+                    </li>
+                </ul>  
+        </div>
+        <div class="texto-servicos" *ngIf ="labSelected != null">
+            <h2>{{ labSelected[0].Nome }}</h2>
+            <h3>Descrição:</h3>
+            <p class="p-texto"> {{ labSelected[0].Descricao1 }}</p>
+            <p class="p-texto"> {{ labSelected[0].Descricao2 }}</p>
+            <p class="p-texto"> {{ labSelected[0].Descricao3 }}</p>
+
+            <h3>Serviços:</h3>
+            <p class="p-texto"> {{ labSelected[0].Servico1 }}</p>
+            <p class="p-texto"> {{ labSelected[0].Servico2 }}</p>
+            <p class="p-texto"> {{ labSelected[0].Servico3 }}</p>
+
+            <h3>Responsáveis</h3>
+            <p class="p-texto"> {{ labSelected[0].Responsavel1 }}</p>
+            <p class="p-texto"> {{ labSelected[0].Responsavel2 }}</p>
+            <p class="p-texto"> {{ labSelected[0].Responsavel3 }}</p>
+
+            <h3>Contatos:</h3>
+            <p class="p-texto"> {{ labSelected[0].Contato1 }}</p>
+            <p class="p-texto"> {{ labSelected[0].Contato2 }}</p>
+            <p class="p-texto"> {{ labSelected[0].Contato3 }}</p>
+
+    
+        </div>
+    </div>    
+</div>
+
+<div id="quemsomos">
+    <div class="body-quemsomos">
+    <div class="texto-qs">
+        <h1>Coordenação de Inovação Tecnológica</h1>
+
+        <p>A Coordenação de Inovação Tecnológica busca trabalhar os temas de inovação e empreendedorismo e viabilizar a propagação da cultura de inovação no CCS.</p>
+
+        <p>Apesar de receber o nome de “Tecnológica”, a Coordenação entende que inovações no ensino, organizacionais ou de outros tipos são de grande relevância e devem ser incentivadas também. Com esse objetivo, a Coordenação se aliou à Agência UFRJ de Inovação para criar o Inova-CCS, que atua na organização de seminários, workshops e eventos para a comunidade do CCS na realização de atividades de treinamento e capacitação em Propriedade Intelectual e Inovação voltadas para professores, técnico-administrativos e estudantes; no mapeamento de expertises de grupos de pesquisa em diferentes subáreas; no atendimento e orientação de membros da comunidade do CCS que desejam criar inovação, depositar patente e interagir com a iniciativa ou criar startups.</p>
+    </div>
+    <div class="imagens-qs">
+        <img src="/assets/imgs/minerva.png" class="brand-logo-qs">
+        <img src="/assets/imgs/labnet.png" class="brand-logo-qs">
+    </div>
+    </div>
+</div>

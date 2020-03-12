@@ -1,0 +1,16 @@
+.map-container {
+    width: 100%;
+    z-index: 0;
+}
+
+.map-frame {
+    border: 0.8px solid green;
+    height: 100%;
+    z-index: 0;
+
+}
+
+#map {
+    width: 100% !important;
+    z-index: 0;
+}

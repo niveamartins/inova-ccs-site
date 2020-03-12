@@ -66,6 +66,7 @@
     padding: 3%;
     margin-top: 2%;
     width: 45%;
+    background-color:white;
 }
 
 .texto-servicos h2 {
@@ -73,7 +74,7 @@
 }
 
 .texto-servicos h3 {
-    color: #FFFF;
+    color: #CC5F0A;
     font-weight: normal;
 }
 

@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class LabsService {
-  backendURL = 'http://inovaccs.labnet.nce.ufrj.br/api/';
+  backendURL = 'http://localhost:8080/api/';
 
   constructor(public http: HttpClient) { }
 

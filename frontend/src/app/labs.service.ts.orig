@@ -7,7 +7,11 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class LabsService {
+<<<<<<< HEAD
   backendURL = 'http://localhost:8080/api/';
+
+=======
+>>>>>>> 4a11a677119bdf3dd869e63b5bf719d1bac831bd
   constructor(public http: HttpClient) { }
 
   // função que pega todos os labs
